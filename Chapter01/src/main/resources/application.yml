@@ -1,0 +1,53 @@
+server:
+  port: 8080
+  error:
+    path: /error
+  servlet:
+    context-path: /chapter01
+    session:
+      timeout: 30m
+  tomcat:
+    max-threads: 500
+  ssl:
+    key-store: /home/foreverhappy/桌面/sang.p12
+    key-alias: tomcathttps
+    key-store-password: zxc123..
+book: 
+  name: 三国演义
+  author: 罗贯中
+  price: 30
+my: 
+  name: 江南一点雨
+  address: China
+  favorites:
+  - 足球
+  - 徒步
+  - Coding
+  users:
+  - name: 江南一点雨
+    address: china
+    favorites:
+      - 足球
+      - 徒步
+      - coding
+  - name: sang
+    address: GZ
+    favorites: 
+      - 阅读
+      - 吉他
+spring:
+  thymeleaf:
+    cache: true
+    check-template: true
+    check-template-location: true
+    encoding: UTF-8
+    prefix: classpath:/templates/
+    suffix: .html
+    servlet:
+      content-type: text/html; charset=utf-8
+  http:
+    encoding:
+      force-response: true
+  
+  
+  
